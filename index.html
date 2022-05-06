@@ -70,7 +70,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="features-page">
@@ -457,6 +459,14 @@
             </li>
           </ul>
         </div>
+
+        <div class="modal-box">
+          <label for="mail" class="soc-spam">Подпишитесь на рассылку</label>
+          <div>
+            <input id="mail" type="email" name="email" placeholder="E-mail" class="imput-email" />
+            <button type="submit" class="submit-btn">Подписаться</button>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -466,6 +476,63 @@
             <use href="./images/icons/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            Имя
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder=" "
+              required
+            />
+          </label>
+
+          <label class="modal-label">
+            Телефон
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder=" "
+              required
+            />
+          </label>
+
+          <label class="modal-label">
+            Почта
+            <input
+              type="email"
+              class="modal-input"
+              name="user-email"
+              placeholder=" "
+              required
+            />
+          </label>
+
+          <label class="modal-label comment">
+            Комментарий
+            <textarea name="user-comment" class="modal-comment"></textarea>
+          </label>
+
+          <div class="polici-box">
+            <input
+              id="polici"
+              type="checkbox"
+              name="polici"
+              class="input-polici"
+            />
+            <label for="polici" class="modal-polici"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="polici-link">Условия договора</a>
+            </label>
+          </div>
+
+          <div class="modal-button">
+            <button type="submit" class="send-btn">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
